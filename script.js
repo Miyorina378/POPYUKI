@@ -15,11 +15,11 @@ window.onload = function() {
     }
 
     img.addEventListener('mousedown', function() {
-        if (bgm.paused) {
+        if (isMusicPlaying && bgm.paused) {
             bgm.play();
         }
         scoreUp();
-        img.src = "images/popyuki2.png";
+        img.src = "images/popyuki2.webp";
         var audio = new Audio("audios/Nihaha.mp4");
         audio.volume = 0.2;
         audio.play();
